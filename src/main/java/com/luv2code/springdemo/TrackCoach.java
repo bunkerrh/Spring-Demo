@@ -7,6 +7,11 @@ public class TrackCoach implements Coach {
 		return "Run a hard 5k";
 	}
 
+	public String getRandomShit()
+	{
+		return "Shit";
+	}
+	
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
 		return null;

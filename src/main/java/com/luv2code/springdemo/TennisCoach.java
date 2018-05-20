@@ -54,6 +54,16 @@ public class TennisCoach implements Coach {
 	{
 		fortuneService = theFortuneService;
 	}
+
+	public String getEmail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getTeam() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 
 }

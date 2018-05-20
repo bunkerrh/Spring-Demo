@@ -22,9 +22,8 @@ public class MyApp {
 		
 		//get the bean from the spring container
 		Coach tennisCoach = context.getBean("tennisCoach", Coach.class);
-		//Coach alpha = context.getBean("tennis", Coach.class);
-		Coach swim = context.getBean("swimCoach", Coach.class);
-		//boolean result = (tennisCoach == alpha);
+		SwimCoach swim = context.getBean("swimCoach", SwimCoach.class);
+		Coach WFT = new TrackCoach();
 
 		//call a method on the bean
 		System.out.println(tennisCoach.getDailyWorkout());
@@ -38,6 +37,9 @@ public class MyApp {
 		
 		//System.out.println(result + ": Hash code of tennisCoach: " + tennisCoach.hashCode() + " Hash code of alpha: " + alpha.hashCode());
 
+		//Call our swim coach methods.. has the props values injected
+		System.out.println(swim.getEmail());
+		System.out.println(swim.getTeam());
 		
 		context.close();
 	} 
